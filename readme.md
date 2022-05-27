@@ -6,7 +6,7 @@ Este projeto tem grande influência e inspiração de sites como [SteamDB](https
 
 Este ainda é meramente um esqueleto do projeto. Planejo adicionar várias outras funções utilizando JavaScript e PHP, e também melhorar a parte visual.
 
-Lista das implementações/melhoras planejadas:  
+## Lista das implementações/melhoras planejadas:  
 - Melhorar a parte estética do site.  
 - Implementação do banco de dados com uma pequena lista de jogos (A versão final terá um banco de dados que é atualizado automaticamente conforme novas promoções apareçam).  
 - Melhorar a responsividade do site.  
