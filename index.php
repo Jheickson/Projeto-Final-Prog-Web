@@ -71,31 +71,31 @@
 
 					
 
-					echo "
+					echo '
 
-					
+					<div class="w3-third w3-container w3-margin-bottom">
+	
+					<img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity">
+					<div class="w3-container w3-white">
 
-					";
+						<p><b> <?php echo $name ?> </b></p>
+						<p>Preço Atual: <?php echo $price_final_formatted ?></p>
+						<p><?php echo $discount_percent ?>% de Desconto</p>
+						<!-- <p>Menor Preço: R$ 00,00 (00/00/0000)</p> -->
+						<p>Preço Normal: <?php echo $initial ?></p>
+
+					</div>
+
+				</div>
+
+					';
 
 				}
 
 				?>
 
 
-					<div class="w3-third w3-container w3-margin-bottom">
-	
-						<img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity">
-						<div class="w3-container w3-white">
 
-							<p><b> <?php echo $name ?> </b></p>
-							<p>Preço Atual: <?php echo $price_final_formatted ?></p>
-							<p><?php echo $discount_percent ?>% de Desconto</p>
-							<!-- <p>Menor Preço: R$ 00,00 (00/00/0000)</p> -->
-							<p>Preço Normal: <?php echo $initial ?></p>
-	
-						</div>
-	
-					</div>
 
 
 
