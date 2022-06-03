@@ -146,14 +146,28 @@
 
 					</div>
 
-					<!-- Paginação -->
 
-					
+
 				</div>
 
 				<!-- Teste Javascript -->
 
-				<input type="button" value="Teste" onclick="jogoteste()">
+				<!-- <input type="button" value="Teste" onclick="jogoteste()"> -->
+
+				<!-- Teste DB -->
+
+				<?php
+
+					include_once("dbh.php");
+
+					$result = mysqli_query($conn, "SELECT * FROM `steam apps`");
+
+					echo mysqli_num_rows($result);
+
+				?>
+
+
+				<!-- Paginação -->
 
 				<div class="w3-center">
 
