@@ -1,11 +1,3 @@
-<?php
-
-	$nomeJogo= "Dark Souls";
-
-?>
-
-
-
 <!DOCTYPE html>
 
 <html>
@@ -58,19 +50,54 @@
 
 				<div class="w3-row-padding">
 
+				<!-- Teste DB -->
+				<?php
+
+				include_once("dbh.php");
+
+				$result = mysqli_query($conn, "SELECT * FROM `steam apps`");
+
+				//echo mysqli_num_rows($result);
+
+				while ($row = $result->fetch_array()) {
+
+					$appID = $row["appID"];
+					$name = $row["name"];
+					$is_free = $row["is_free"];
+					$price_final_formatted = $row["price_final_formatted"];
+					$discount_percent = $row["discount_percent"];
+					$final = $row["final"];
+					$initial = $row["initial"];
+
+					
+
+					echo "
+
+					
+
+					";
+
+				}
+
+				?>
+
+
 					<div class="w3-third w3-container w3-margin-bottom">
 	
 						<img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity">
 						<div class="w3-container w3-white">
 
-							<p><b> <?php echo $nomeJogo ?> </b></p>
-							<p>Preço Atual: R$ 00,00 (0% OFF)</p>
-							<p>Menor Preço: R$ 00,00 (00/00/0000)</p>
-							<p>Preço Normal: R$ 00,00</p>
+							<p><b> <?php echo $name ?> </b></p>
+							<p>Preço Atual: <?php echo $price_final_formatted ?></p>
+							<p><?php echo $discount_percent ?>% de Desconto</p>
+							<!-- <p>Menor Preço: R$ 00,00 (00/00/0000)</p> -->
+							<p>Preço Normal: <?php echo $initial ?></p>
 	
 						</div>
 	
 					</div>
+
+
 
 					<div class="w3-third w3-container w3-margin-bottom">
 	
@@ -142,6 +169,7 @@
 							<p>Menor Preço: R$ 00,00 (00/00/0000)</p>
 							<p>Preço Normal: R$ 00,00</p>
 
+
 						</div>
 
 					</div>
@@ -154,17 +182,6 @@
 
 				<!-- <input type="button" value="Teste" onclick="jogoteste()"> -->
 
-				<!-- Teste DB -->
-
-				<?php
-
-					include_once("dbh.php");
-
-					$result = mysqli_query($conn, "SELECT * FROM `steam apps`");
-
-					echo mysqli_num_rows($result);
-
-				?>
 
 
 				<!-- Paginação -->
