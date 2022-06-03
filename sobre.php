@@ -33,13 +33,13 @@
 
 			<div class="w3-dark-grey">
 				<div class="w3-container">
-				<h1><a href="index.html" target="_self" style="text-decoration:none">PromoWatch</a></h1>
+				<h1><a href="index.php" target="_self" style="text-decoration:none">PromoWatch</a></h1>
 				</div>
 			</div>
 
 		<a href="#" class="w3-bar-item w3-button" style="width:100%;">Cadastro de usuários <br> (Em breve)</a>
 		<a href="#" class="w3-bar-item w3-button" style="width:100%;">Lista de interesse <br> (Em breve)</a>
-		<a href="sobre.html" class="w3-bar-item w3-button" style="width:100%;">Sobre</a>
+		<a href="sobre.php" class="w3-bar-item w3-button" style="width:100%;">Sobre</a>
 
     </nav>
     
