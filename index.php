@@ -51,11 +51,11 @@
 				<div class="w3-row-padding">
 
 				<!-- Teste DB -->
-				<?php
+				<!-- <?php
 
-				include_once("dbh.php");
+				// include_once("dbh.php");
 
-				$result = mysqli_query($conn, "SELECT * FROM `steam apps`");
+				// $result = mysqli_query($conn, "SELECT * FROM `steam apps`");
 
 				//echo mysqli_num_rows($result);
 
@@ -89,9 +89,9 @@
 
 				// 	';
 
-				// }
+				// } 
 
-				?>
+				?> -->
 
 				<!-- Teste Curl -->
 
