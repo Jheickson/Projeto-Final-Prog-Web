@@ -97,12 +97,40 @@
 
 				<?php
 
-				include_once("curl.php");
+					include_once("curl.php");
+
+					foreach ($response_arr->data->list as $item){
+
+						// echo $item->title . " ";
+						// echo $item->price_new . " ";
+						// echo $item->price_old . " ";
+						// echo $item->price_cut . " <br>";
+
+											echo '
+
+					<div class="w3-third w3-container w3-margin-bottom">
+	
+						<img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity">
+						<div class="w3-container w3-white">
+
+							<p><b> ' , $item->title ,'  </b></p>
+							<p>Preço Atual: ' , $item->price_new ,'</p>
+							<p> ' , $item->price_cut , '% de Desconto</p>
+							<p>Preço Normal: ' , $item->price_old , '</p>
+
+					</div>
+
+					</div>
+
+					';
 
 
 
 
+					}
 
+
+				
 				?>
 
 
