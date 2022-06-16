@@ -8,7 +8,7 @@ Este ainda é meramente um esqueleto do projeto. Planejo adicionar várias outra
 
 ## Lista das implementações/melhoras planejadas:  
 - Melhorar a parte estética do site. (Fiz pequenas mudanças na 1ª e 2ª entrega)  
-- Implementação do banco de dados com uma pequena lista de jogos (2ª Entrega) (A versão final terá um banco de dados que é atualizado automaticamente conforme novas promoções apareçam).  
+- X Implementação do banco de dados com uma pequena lista de jogos (2ª Entrega) (A versão final terá um banco de dados que é atualizado automaticamente conforme novas promoções apareçam).  
 - Melhorar a responsividade do site. (1ª Entrega)  
 - Adicionar um cadastro de usuários. (Previsto para próxima entrega)  
 - Adicionar uma forma de criação de listas de observação para os usuários.  
