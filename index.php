@@ -59,40 +59,51 @@
 
 				//echo mysqli_num_rows($result);
 
-				while ($row = $result->fetch_array()) {
+				// while ($row = $result->fetch_array()) {
 
-					$appID = $row["appID"];
-					$name = $row["name"];
-					$is_free = $row["is_free"];
-					$price_final_formatted = $row["price_final_formatted"];
-					$discount_percent = $row["discount_percent"];
-					$final = "R$ " . number_format($row["final"]/100, 2);
-					$initial = "R$ " . number_format(($row["initial"])/100, 2);
+				// 	$appID = $row["appID"];
+				// 	$name = $row["name"];
+				// 	$is_free = $row["is_free"];
+				// 	$price_final_formatted = $row["price_final_formatted"];
+				// 	$discount_percent = $row["discount_percent"];
+				// 	$final = "R$ " . number_format($row["final"]/100, 2);
+				// 	$initial = "R$ " . number_format(($row["initial"])/100, 2);
 
 					
 
-					echo '
+				// 	echo '
 
-					<div class="w3-third w3-container w3-margin-bottom">
+				// 	<div class="w3-third w3-container w3-margin-bottom">
 	
-						<img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity">
-						<div class="w3-container w3-white">
+				// 		<img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity">
+				// 		<div class="w3-container w3-white">
 
-							<p><b> ' , $name ,'  </b></p>
-							<p>Preço Atual: ' , $final ,'</p>
-							<p> ' , $discount_percent , '% de Desconto</p>
-							<p>Preço Normal: ' , $initial , '</p>
+				// 			<p><b> ' , $name ,'  </b></p>
+				// 			<p>Preço Atual: ' , $final ,'</p>
+				// 			<p> ' , $discount_percent , '% de Desconto</p>
+				// 			<p>Preço Normal: ' , $initial , '</p>
 
-					</div>
+				// 	</div>
 
-					</div>
+				// 	</div>
 
-					';
+				// 	';
 
-				}
+				// }
 
 				?>
 
+				<!-- Teste Curl -->
+
+				<?php
+
+				include_once("curl.php");
+
+
+
+
+
+				?>
 
 
 				<!-- 
