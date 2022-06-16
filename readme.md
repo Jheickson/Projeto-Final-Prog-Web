@@ -8,14 +8,10 @@ Este ainda é meramente um esqueleto do projeto. Planejo adicionar várias outra
 
 ## Lista das implementações/melhoras planejadas:  
 - Melhorar a parte estética do site. (Fiz pequenas mudanças na 1ª e 2ª entrega)  
-- X Implementação do banco de dados com uma pequena lista de jogos (2ª Entrega) (A versão final terá um banco de dados que é atualizado automaticamente conforme novas promoções apareçam).  
-- Melhorar a responsividade do site. (1ª Entrega)  
-- Adicionar um cadastro de usuários. (Previsto para próxima entrega)  
-- Adicionar uma forma de criação de listas de observação para os usuários.  
-- Adicionar uma forma de notificar os usuários de novas promoções que possam interessá-lo.  
+- Mostrar as fotos dos jogos.  
+- Criar o sistema de paginação
+- Melhorar a responsividade do site.  
 - Aberto à sugestões.  
 
-<!-- Rennan Jose Maia Da Silva14:53
-curl php rest
-Rennan Jose Maia Da Silva14:54
-REST client example -->
+## Implementações concluídas:
+- Sistema que atualiza as promoções automaticamente.  

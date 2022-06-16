@@ -69,28 +69,6 @@
 				// 	$final = "R$ " . number_format($row["final"]/100, 2);
 				// 	$initial = "R$ " . number_format(($row["initial"])/100, 2);
 
-					
-
-				// 	echo '
-
-				// 	<div class="w3-third w3-container w3-margin-bottom">
-	
-				// 		<img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity">
-				// 		<div class="w3-container w3-white">
-
-				// 			<p><b> ' , $name ,'  </b></p>
-				// 			<p>Preço Atual: ' , $final ,'</p>
-				// 			<p> ' , $discount_percent , '% de Desconto</p>
-				// 			<p>Preço Normal: ' , $initial , '</p>
-
-				// 	</div>
-
-				// 	</div>
-
-				// 	';
-
-				// } 
-
 				?> -->
 
 				<!-- Teste Curl -->
@@ -101,36 +79,33 @@
 
 					foreach ($response_arr->data->list as $item){
 
-						// echo $item->title . " ";
-						// echo $item->price_new . " ";
-						// echo $item->price_old . " ";
-						// echo $item->price_cut . " <br>";
+						$titulo = $item->title;
+						$preco_novo = "R$ " . number_format($item->price_new, 2);
+						$preco_velho = "R$ " . number_format($item->price_old, 2);
+						$preco_desconto = $item->price_cut;
+						$preco_descontado = "R$ " . number_format(($item->price_old) * ($item->price_cut / 100), 2);
+						$link = $item->urls->buy;
 
-											echo '
+						echo '
 
-					<div class="w3-third w3-container w3-margin-bottom">
-	
-						<img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity">
-						<div class="w3-container w3-white">
+							<div class="w3-third w3-container w3-margin-bottom" style="height: 560px">
+			
+								<a href="' , $link , '" target="blank"> <img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity"> </a>
+								<div class="w3-container w3-white">
 
-							<p><b> ' , $item->title ,'  </b></p>
-							<p>Preço Atual: ' , $item->price_new ,'</p>
-							<p> ' , $item->price_cut , '% de Desconto</p>
-							<p>Preço Normal: ' , $item->price_old , '</p>
+									<p style="font-size: 1em"><b> ' , $titulo ,'</b><br>
+									Preço Atual: ' , $preco_novo ,' <br>
+									' , $preco_desconto , '% de Desconto (' , $preco_descontado , ')<br>
+									Preço Normal: ' , $preco_velho , '</p>
 
-					</div>
+								</div>
 
-					</div>
+							</div>
 
-					';
-
-
-
+						';
 
 					}
 
-
-				
 				?>
 
 
