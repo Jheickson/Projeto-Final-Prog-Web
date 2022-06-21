@@ -7,8 +7,8 @@
 		<Title>PromoWatch - Início</Title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="style.css">
-		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
 		<script src="js/scripts.js">
 		</script>
@@ -85,12 +85,13 @@
 						$preco_desconto = $item->price_cut;
 						$preco_descontado = "R$ " . number_format(($item->price_old) * ($item->price_cut / 100), 2);
 						$link = $item->urls->buy;
+						$link_header_image = (int)filter_var($link, FILTER_SANITIZE_NUMBER_INT);
 
 						echo '
 
 							<div class="w3-third w3-container w3-margin-bottom" style="height: 560px">
 			
-								<a href="' , $link , '" target="blank"> <img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity"> </a>
+								<a href="' , $link , '" target="blank"> <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/', $link_header_image ,'/header.jpg" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity"> </a>
 								<div class="w3-container w3-white">
 
 									<p style="font-size: 1em"><b> ' , $titulo ,'</b><br>
