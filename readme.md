@@ -8,10 +8,10 @@ Este ainda é meramente um esqueleto do projeto. Planejo adicionar várias outra
 
 ## Lista das implementações/melhoras planejadas:  
 - Melhorar a parte estética do site. (Fiz pequenas mudanças na 1ª e 2ª entrega)  
-- Mostrar as fotos dos jogos.  
 - Criar o sistema de paginação
 - Melhorar a responsividade do site.  
 - Aberto à sugestões.  
 
 ## Implementações concluídas:
 - Sistema que atualiza as promoções automaticamente.  
+- Mostrar as fotos dos jogos.  

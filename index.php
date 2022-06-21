@@ -7,21 +7,14 @@
 		<Title>PromoWatch - Início</Title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- <link rel="stylesheet" href="style.css"> -->
+
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+		<link rel="stylesheet" href="style.css">
 		<script src="js/scripts.js">
 		</script>
 
 	</head>
-
-	<!-- Bordas para melhor visualização de espaçamentos -->
-	<!-- <style>
-		* {
-			border: 1px dotted;
-			border-color: red;
-		}
-	</style> -->
 
 	<body class="w3-light-grey">
 
@@ -37,8 +30,17 @@
 				</div>
 			</div>
 
-		<a href="#" class="w3-bar-item w3-button" style="width:100%;">Cadastro de usuários <br> (Em breve)</a>
-		<a href="#" class="w3-bar-item w3-button" style="width:100%;">Lista de interesse <br> (Em breve)</a>
+		<a href="https://github.com/Jheickson/Projeto-Final-Prog-Web" class="w3-bar-item w3-button" style="width:100%;">Link para o projeto no Github<br>
+	
+		<img src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" width="50%" height="50%" alt="Github" title="Github">
+
+	</a>
+		<a href="#" class="w3-bar-item w3-button" style="width:100%;">Perfil do discente no Github <br>
+	
+		<img id="fotoPerfil" src="img/Felipe.jpg" width="50%" height="50%" alt="Jheickson Felipe" title="Jheickson Felipe">
+	
+
+	</a>
 		<a href="sobre.php" class="w3-bar-item w3-button" style="width:100%;">Sobre</a>
 
 			</nav>
@@ -50,28 +52,7 @@
 
 				<div class="w3-row-padding">
 
-				<!-- Teste DB -->
-				<!-- <?php
-
-				// include_once("dbh.php");
-
-				// $result = mysqli_query($conn, "SELECT * FROM `steam apps`");
-
-				//echo mysqli_num_rows($result);
-
-				// while ($row = $result->fetch_array()) {
-
-				// 	$appID = $row["appID"];
-				// 	$name = $row["name"];
-				// 	$is_free = $row["is_free"];
-				// 	$price_final_formatted = $row["price_final_formatted"];
-				// 	$discount_percent = $row["discount_percent"];
-				// 	$final = "R$ " . number_format($row["final"]/100, 2);
-				// 	$initial = "R$ " . number_format(($row["initial"])/100, 2);
-
-				?> -->
-
-				<!-- Teste Curl -->
+				<!-- Curl -->
 
 				<?php
 
@@ -89,26 +70,31 @@
 
 						echo '
 
-							<div class="w3-third w3-container w3-margin-bottom" style="height: auto">
-			
-								<a href="' , $link , '" target="blank"> <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/', $steamID ,'/capsule_616x353.jpg" alt="',$titulo,'" style="width: 100%;" class="w3-hover-capacity"> </a>
+							<div class="w3-third w3-card w3-margin-bottom w3-row-padding">
 
-								<div class="w3-container w3-white">
+							<div class="parent">
+								<a href="' , $link , '" target="blank"> <img src="http://via.placeholder.com/616x353" alt="',$titulo,'" style="width: 100%;" class="w3-hover-capacity w3-container"> </a>
 
-									<p style="font-size: 1em"><b> ' , $titulo ,'</b><br>
-									Preço Atual: ' , $preco_novo ,' <br>
-									' , $preco_desconto , '% de Desconto (' , $preco_descontado , ')<br>
-									Preço Normal: ' , $preco_velho , '</p>
-
-								</div>
-
+								<a href="' , $link , '" target="blank"> <img id="gameHeader" src="https://cdn.cloudflare.steamstatic.com/steam/apps/', $steamID ,'/capsule_616x353.jpg" alt="',$titulo,'" style="width: 100%;" class="over-img w3-hover-capacity w3-container" onerror=" <script>teste(); <\script>"> </a>
 							</div>
 
+							<div class="w3-container w3-white" style="width: 100%">
+
+								<p style="font-size: 1em"><b> ' , $titulo ,'</b><br>
+								Preço Atual: ' , $preco_novo ,' <br>
+								' , $preco_desconto , '% de Desconto (' , $preco_descontado , ')<br>
+								Preço Normal: ' , $preco_velho , '</p>
+
+							</div>
+							
+							</div>
+							
 						';
 
 					}
 
 				?>
+
 
 
 				<!-- 
@@ -197,7 +183,7 @@
 
 				<!-- Teste Javascript -->
 
-				<!-- <input type="button" value="Teste" onclick="jogoteste()"> -->
+				<!-- <input type="button" value="Teste" onclick="teste()"> -->
 
 
 

@@ -1,0 +1,23 @@
+/* Bordas para melhor visualização de espaçamentos
+* {
+    border: 1px dotted;
+    border-color: red;
+} */
+
+.parent{
+    position: relative;
+}
+.over-img{
+    position: absolute;
+    left: 0px;
+}
+
+#fotoPerfil {
+
+    /* max-width: 3em; */
+    border: 2px solid darkgray;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    padding: 2.5px;
+
+}
