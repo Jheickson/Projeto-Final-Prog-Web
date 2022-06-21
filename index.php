@@ -85,13 +85,14 @@
 						$preco_desconto = $item->price_cut;
 						$preco_descontado = "R$ " . number_format(($item->price_old) * ($item->price_cut / 100), 2);
 						$link = $item->urls->buy;
-						$link_header_image = (int)filter_var($link, FILTER_SANITIZE_NUMBER_INT);
+						$steamID = (int)filter_var($link, FILTER_SANITIZE_NUMBER_INT);
 
 						echo '
 
-							<div class="w3-third w3-container w3-margin-bottom" style="height: 560px">
+							<div class="w3-third w3-container w3-margin-bottom" style="height: auto">
 			
-								<a href="' , $link , '" target="blank"> <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/', $link_header_image ,'/header.jpg" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity"> </a>
+								<a href="' , $link , '" target="blank"> <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/', $steamID ,'/capsule_616x353.jpg" alt="',$titulo,'" style="width: 100%;" class="w3-hover-capacity"> </a>
+
 								<div class="w3-container w3-white">
 
 									<p style="font-size: 1em"><b> ' , $titulo ,'</b><br>
