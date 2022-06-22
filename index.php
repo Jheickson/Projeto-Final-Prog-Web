@@ -30,12 +30,12 @@
 				</div>
 			</div>
 
-		<a href="https://github.com/Jheickson/Projeto-Final-Prog-Web" class="w3-bar-item w3-button" style="width:100%;">Link para o projeto no Github<br>
+		<a href="https://github.com/Jheickson/Projeto-Final-Prog-Web" target="blank" class="w3-bar-item w3-button" style="width:100%;">Link para o projeto no Github<br>
 	
 		<img src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" width="50%" height="50%" alt="Github" title="Github">
 
 	</a>
-		<a href="#" class="w3-bar-item w3-button" style="width:100%;">Perfil do discente no Github <br>
+		<a href="https://github.com/Jheickson" target="blank" class="w3-bar-item w3-button" style="width:100%;">Perfil do discente no Github <br>
 	
 		<img id="fotoPerfil" src="img/Felipe.jpg" width="50%" height="50%" alt="Jheickson Felipe" title="Jheickson Felipe">
 	
@@ -73,7 +73,7 @@
 							<div class="w3-third w3-card w3-margin-bottom w3-row-padding">
 
 							<div class="parent">
-								<a href="' , $link , '" target="blank"> <img src="http://via.placeholder.com/616x353" alt="',$titulo,'" style="width: 100%;" class="w3-hover-capacity w3-container"> </a>
+								<a href="' , $link , '" target="blank"> <img src="https://via.placeholder.com/616x353?text=Imagem+Não+Encontrada" alt="',$titulo,'" style="width: 100%;" class="w3-hover-capacity w3-container"> </a>
 
 								<a href="' , $link , '" target="blank"> <img id="gameHeader" src="https://cdn.cloudflare.steamstatic.com/steam/apps/', $steamID ,'/capsule_616x353.jpg" alt="',$titulo,'" style="width: 100%;" class="over-img w3-hover-capacity w3-container" onerror=" <script>teste(); <\script>"> </a>
 							</div>
@@ -94,97 +94,6 @@
 					}
 
 				?>
-
-
-
-				<!-- 
-
-
-					<div class="w3-third w3-container w3-margin-bottom">
-	
-						<img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity">
-						<div class="w3-container w3-white">
-
-							<p><b>Placeholder exemplo 2</b></p>
-							<p>Preço Atual: R$ 00,00 (0% OFF)</p>
-							<p>Menor Preço: R$ 00,00 (00/00/0000)</p>
-							<p>Preço Normal: R$ 00,00</p>
-	
-						</div>
-	
-					</div>
-
-					<div class="w3-third w3-container w3-margin-bottom">
-	
-						<img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity">
-						<div class="w3-container w3-white">
-
-							<p><b>Placeholder exemplo 3</b></p>
-							<p>Preço Atual: R$ 00,00 (0% OFF)</p>
-							<p>Menor Preço: R$ 00,00 (00/00/0000)</p>
-							<p>Preço Normal: R$ 00,00</p>
-	
-						</div>
-	
-					</div>
-
-				</div>
-
-				<div class="w3-row-padding">
-
-					<div class="w3-third w3-container w3-margin-bottom">
-	
-						<img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity">
-						<div class="w3-container w3-white">
-
-							<p><b>Placeholder exemplo 4</b></p>
-							<p>Preço Atual: R$ 00,00 (0% OFF)</p>
-							<p>Menor Preço: R$ 00,00 (00/00/0000)</p>
-							<p>Preço Normal: R$ 00,00</p>
-	
-						</div>
-	
-					</div>
-
-					<div class="w3-third w3-container w3-margin-bottom">
-	
-						<img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity">
-						<div class="w3-container w3-white">
-
-							<p><b>Placeholder exemplo 5</b></p>
-							<p>Preço Atual: R$ 00,00 (0% OFF)</p>
-							<p>Menor Preço: R$ 00,00 (00/00/0000)</p>
-							<p>Preço Normal: R$ 00,00</p>
-
-						</div>
-
-					</div>
-
-					<div class="w3-third w3-container w3-margin-bottom">
-
-						<img src="http://via.placeholder.com/300x250" alt="Exemplo 1" style="width: 100%;" class="w3-hover-capacity">
-						<div class="w3-container w3-white">
-
-							<p><b>Placeholder exemplo 6</b></p>
-							<p>Preço Atual: R$ 00,00 (0% OFF)</p>
-							<p>Menor Preço: R$ 00,00 (00/00/0000)</p>
-							<p>Preço Normal: R$ 00,00</p>
-
-
-						</div>
-
-					</div>
-
-					-->
-
-
-
-				</div>
-
-				<!-- Teste Javascript -->
-
-				<!-- <input type="button" value="Teste" onclick="teste()"> -->
-
 
 
 				<!-- Paginação -->

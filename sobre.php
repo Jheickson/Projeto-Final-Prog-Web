@@ -37,12 +37,12 @@
 				</div>
 			</div>
 
-		<a href="https://github.com/Jheickson/Projeto-Final-Prog-Web" class="w3-bar-item w3-button" style="width:100%;">Link para o projeto no Github<br>
+		<a href="https://github.com/Jheickson/Projeto-Final-Prog-Web" target="blank" class="w3-bar-item w3-button" style="width:100%;">Link para o projeto no Github<br>
 	
 		<img src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" width="50%" height="50%" alt="Github" title="Github">
 
 	</a>
-		<a href="#" class="w3-bar-item w3-button" style="width:100%;">Perfil do discente no Github <br>
+		<a href="https://github.com/Jheickson" target="blank" class="w3-bar-item w3-button" style="width:100%;">Perfil do discente no Github <br>
 	
 		<img id="fotoPerfil" src="img/Felipe.jpg" width="50%" height="50%" alt="Jheickson Felipe" title="Jheickson Felipe">
 	
