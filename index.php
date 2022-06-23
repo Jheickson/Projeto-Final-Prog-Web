@@ -56,7 +56,7 @@
 
 					function updateCurl($offset){
 
-						$url = "https://api.isthereanydeal.com/v01/deals/list/?key=c22b79a6422708915183a0b4ae493ffc128a8e25&limit=75&offset=$offset&region=br2&country=BR&shops=steam&sort=time%3Adesc";
+						$url = "https://api.isthereanydeal.com/v01/deals/list/?key=c22b79a6422708915183a0b4ae493ffc128a8e25&limit=300&offset=$offset&region=br2&country=BR&shops=steam&sort=time%3Adesc";
 
 
 						$ch = curl_init();
